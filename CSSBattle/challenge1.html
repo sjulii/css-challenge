@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="cell1">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="cell2">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+
+<style>
+  * {
+    margin: 0;
+  }
+  .container {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: #006645;
+    display: grid;
+    grid-gap: 1px;
+    grid-template: 1fr 150px 1fr/ 1fr 150px 1fr;
+  }
+  .cell1 {
+    grid-area: 1/2/4/3;
+    display: grid;
+    grid-template: 1fr/1fr 1fr 1fr;
+    grid-gap: 30px;
+    background: #006645;
+  }
+  .cell2 {
+    grid-area: 2/1/3/4;
+    display: grid;
+    grid-template: 1fr 1fr 1fr /1fr;
+    grid-gap: 30px;
+    background: #006645;
+  }
+  .cell1 > div,
+  .cell2 > div {
+    background-color: #dde89a;
+    z-index: 1;
+  }
+</style>
